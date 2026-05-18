@@ -1,0 +1,20 @@
+-- CUDA found. Using CUDA.
+-- Configuring done (1.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /gpfs/exfel/u/usr/SPB/202501/p006933/Shared/dfly-p6933/libspimage/build
+-- Cache values
+BUILD_STATIC_LIB:BOOL=
+BUILD_TESTING:BOOL=ON
+CMAKE_BUILD_TYPE:STRING=
+CMAKE_CUDA_ARCHITECTURES:STRING=
+CMAKE_INSTALL_PREFIX:PATH=/home/patricka/p6933/usr/Shared/dfly-p6933/dfly
+CUDAToolkit_BIN_DIR:PATH=/software/cuda/cuda-12.6/bin
+CUDAToolkit_CUPTI_INCLUDE_DIR:PATH=/software/cuda/cuda-12.6/include
+DMALLOC_USE:BOOL=OFF
+DOUBLE_PRECISION:BOOL=OFF
+HDF5_C_LIBRARY_hdf5:FILEPATH=/usr/lib64/openmpi/lib/libhdf5.so
+INCLUDE_DEPENDENCIES:BOOL=
+PYTHON_EXECUTABLE:PATH=/home/patricka/p6933/usr/Shared/dfly-p6933/dfly/bin/python3.9
+PYTHON_WRAPPERS:BOOL=ON
+SP_MEM_DEBUG:BOOL=OFF
+USE_CUDA:BOOL=ON
