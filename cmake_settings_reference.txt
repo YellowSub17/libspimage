@@ -1,3 +1,4 @@
+-- options for ccmake :)
 -- CUDA found. Using CUDA.
 -- Configuring done (1.5s)
 -- Generating done (0.1s)
