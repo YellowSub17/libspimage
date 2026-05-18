@@ -9,6 +9,11 @@ if(POLICY CMP0025)
   cmake_policy(SET CMP0025 NEW) # CMake 3.0
 endif()
 
+# If the variable is empty, set a sensible default (e.g., native or a common architecture)
+if(NOT CMAKE_CUDA_ARCHITECTURES)
+  set(CMAKE_CUDA_ARCHITECTURES native)
+endif()
+
 project(spimage)
 
 include(CTest)
@@ -162,7 +167,7 @@ endif()
 
 
 list(APPEND TESTS_LIBRARIES  ${TIFF_LIBRARIES} ${FFTW3_LIBRARIES} ${PNG_LIBRARIES} ${HDF5_LIBRARIES}  ${GSL_LIBRARIES})
-list(APPEND SPIMAGE_LIBRARIES  ${TIFF_LIBRARIES} ${FFTW3_LIBRARIES} ${PNG_LIBRARIES} ${HDF5_LIBRARIES})
+list(APPEND SPIMAGE_LIBRARIES  ${TIFF_LIBRARIES} ${FFTW3_LIBRARIES} ${PNG_LIBRARIES} ${HDF5_LIBRARIES} m)
     
 if(LINK_TO_DMALLOC)
 list(APPEND SPIMAGE_LIBRARIES ${DMALLOC_LIBRARY})
