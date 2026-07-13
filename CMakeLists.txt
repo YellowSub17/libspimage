@@ -10,9 +10,10 @@ if(POLICY CMP0025)
 endif()
 
 # If the variable is empty, set a sensible default (e.g., native or a common architecture)
-if(NOT CMAKE_CUDA_ARCHITECTURES)
-  set(CMAKE_CUDA_ARCHITECTURES native)
-endif()
+## PA: Fix for maxwell
+#if(NOT CMAKE_CUDA_ARCHITECTURES)
+  #set(CMAKE_CUDA_ARCHITECTURES native)
+#endif()
 
 project(spimage)
 
