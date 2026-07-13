@@ -16,6 +16,8 @@ if(CUDA_FOUND)
   #set_target_properties(tests PROPERTIES CUDA_ARCHITECTURES "35")
 endif()
 
+target_link_libraries(tests PRIVATE ${TESTS_LIBRARIES} MATH_LIBRARY)
+
 find_library(MATH_LIBRARY m)
 target_link_libraries(tests PRIVATE ${TESTS_LIBRARIES} MATH_LIBRARY)
 
